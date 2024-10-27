@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olivia Cooks</title>
+
+    <!--favicon-->
+
+    <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml" />
+
+    <!--custom css link-->
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--google font link-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/hero-banner.png"
+      media="min-width(768px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/hero-banner-bg.png"
+      media="min-width(768px)"
+    />
+    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <h1>
+          <a href="#" class="logo">Olivia Cooks<span class="span">.</span></a>
+        </h1>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="nav-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-btn-group">
+          <button class="search-btn" aria-label="Search" data-search-btn>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <button class="btn btn-hover">Reservation</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!--#HERO-->
+
+        <section
+          class="hero"
+          id="home"
+          style="background-image: url('./assets/images/hero-bg.jpg')"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle">Eat Sleep And</p>
+
+              <h2 class="h1 hero-title">Supper delicious Burger in town!</h2>
+
+              <p class="hero-text">
+                Food is any substance consumed to provide nutritional support
+                for an organism.
+              </p>
+
+              <button class="btn">Book A Table</button>
+            </div>
+
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/hero-banner-bg.png"
+                width="820"
+                height="716"
+                alt=""
+                aria-hidden="true"
+                class="w-100 hero-img-bg"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #FOOD MENU
+      -->
+
+        <section class="section food-menu" id="food-menu">
+          <div class="container">
+            <p class="section-subtitle">Popular Dishes</p>
+
+            <h2 class="h2 section-title">
+              Our Delicious <span class="span">Foods</span>
+            </h2>
+
+            <p class="section-text">
+              Food is any substance consumed to provide nutritional support for
+              an organism.
+            </p>
+
+            <ul class="fiter-list">
+              <li>
+                <button class="filter-btn active">All</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Pizza</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Burger</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Drinks</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Sandwich</button>
+              </li>
+            </ul>
+
+            <ul class="food-menu-list">
+              <li>
+                <div class="food-menu-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/food-menu-1.png"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      alt="Fried Chicken Unlimited"
+                      class="w-100"
+                    />
+
+                    <div class="badge">-15%</div>
+                  </div>
+
+                  <div class="wrapper">
+                    <p class="category">Chicken</p>
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <h3 class="h3 card-title">Fried Chicken Unlimited</h3>
+
+                  <div class="price-wrapper">
+                    <p class="price-text">Price:</p>
+
+                    <data class="price">$49.00</data>
+
+                    <del class="del" value="69.00">$69.00</del>
+                  </div>
+                  <button class="btn food-menu-btn">Order Now</button>
+                </div>
+              </li>
+
+              <li>
+                <div class="food-menu-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/food-menu-2.png"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      alt="Burger King Whopper"
+                      class="w-100"
+                    />
+
+                    <div class="badge">-10%</div>
+                  </div>
+
+                  <div class="wrapper">
+                    <p class="category">Noddles</p>
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <h3 class="h3 card-title">Burger King Whopper</h3>
+
+                  <div class="price-wrapper">
+                    <p class="price-text">Price:</p>
+
+                    <data class="price" value="29.00">$29.00</data>
+
+                    <del class="del">$39.00</del>
+                  </div>
+                  <button class="btn food-menu-btn">Order Now</button>
+                </div>
+              </li>
+
+              <li>
+                <div class="food-menu-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/food-menu-3.png"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      alt="White Castle Pizzas"
+                      class="w-100"
+                    />
+
+                    <div class="badge">-25%</div>
+                  </div>
+
+                  <div class="wrapper">
+                    <p class="category">Pizzas</p>
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <h3 class="h3 card-title">White Castle Pizzas</h3>
+
+                  <div class="price-wrapper">
+                    <p class="price-text">Price:</p>
+
+                    <data class="price" value="49.00">$49.00</data>
+
+                    <del class="del">$69.00</del>
+                  </div>
+                  <button class="btn food-menu-btn">Order Now</button>
+                </div>
+              </li>
+
+              <li>
+                <div class="food-menu-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/food-menu-4.png"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      alt="Bell Burrito Supreme"
+                      class="w-100"
+                    />
+
+                    <div class="badge">-20%</div>
+                  </div>
+
+                  <div class="wrapper">
+                    <p class="category">Burrito</p>
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <h3 class="h3 card-title">Bell Burrito Supreme</h3>
+
+                  <div class="price-wrapper">
+                    <p class="price-text">Price:</p>
+
+                    <data class="price" value="59.00 ">$59.00</data>
+
+                    <del class="del">$69.00</del>
+                  </div>
+                  <button class="btn food-menu-btn">Order Now</button>
+                </div>
+              </li>
+
+              <li>
+                <div class="food-menu-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/food-menu-5.png"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      alt="Kung Pao Chicken BBQ"
+                      class="w-100"
+                    />
+
+                    <div class="badge">-5%</div>
+                  </div>
+
+                  <div class="wrapper">
+                    <p class="category">Nuggets</p>
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <h3 class="h3 card-title">Kung Pao Chicken BBQ</h3>
+
+                  <div class="price-wrapper">
+                    <p class="price-text">Price:</p>
+
+                    <data class="price" value="49.00">$49.00</data>
+
+                    <del class="del">$69.00</del>
+                  </div>
+                  <button class="btn food-menu-btn">Order Now</button>
+                </div>
+              </li>
+
+              <li>
+                <div class="food-menu-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/food-menu-6.png"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      alt="Wendy's Chicken"
+                      class="w-100"
+                    />
+
+                    <div class="badge">-15%</div>
+                  </div>
+
+                  <div class="wrapper">
+                    <p class="category">Chicken</p>
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <h3 class="h3 card-title">Wendy's Chicken</h3>
+
+                  <div class="price-wrapper">
+                    <p class="price-text">Price:</p>
+
+                    <data class="price" value="49.00">$49.00</data>
+
+                    <del class="del">$69.00</del>
+                  </div>
+                  <button class="btn food-menu-btn">Order Now</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--#TESTIMONIALS-->
+
+        <section class="section section-divider white testi">
+          <div class="container">
+            <p class="section-subtitle">Testimonials</p>
+
+            <h2 class="h2 section-title">
+              Our Customers <span class="span">Reviews</span>
+            </h2>
+
+            <p class="section-text">
+              Food is any substance consumed to provide nutritional support for
+              an organism.
+            </p>
+
+            <ul class="testi-list has-scrollbar">
+              <li class="testi-item">
+                <div class="testi-card">
+                  <div class="profile-wrapper">
+                    <figure class="avatar">
+                      <img
+                        src="./assets/images/avatar-1.jpeg"
+                        width="60"
+                        height="60"
+                        loading="lazy"
+                        alt="Robert William"
+                      />
+                    </figure>
+
+                    <div>
+                      <h3 class="h4 testi-name">Robert William</h3>
+
+                      <p class="testi-title">CEO Kingfisher</p>
+                    </div>
+                  </div>
+
+                  <blockquote class="testi-text">
+                    "I would be lost without restaurant. I would like to
+                    personally thank you for your outstanding product."
+                  </blockquote>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testi-item">
+                <div class="testi-card">
+                  <div class="profile-wrapper">
+                    <figure class="avatar">
+                      <img
+                        src="./assets/images/avatar-2.jpg"
+                        width="80"
+                        height="80"
+                        loading="lazy"
+                        alt="Thomas Josef"
+                      />
+                    </figure>
+
+                    <div>
+                      <h3 class="h4 testi-name">Thomas Josef</h3>
+
+                      <p class="testi-title">CEO Getforce</p>
+                    </div>
+                  </div>
+
+                  <blockquote class="testi-text">
+                    "I would be lost without restaurant. I would like to
+                    personally thank you for your outstanding product."
+                  </blockquote>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testi-item">
+                <div class="testi-card">
+                  <div class="profile-wrapper">
+                    <figure class="avatar">
+                      <img
+                        src="./assets/images/avatar-3.jpg"
+                        width="65"
+                        height="60"
+                        loading="lazy"
+                        alt="Charles Richard"
+                      />
+                    </figure>
+
+                    <div>
+                      <h3 class="h4 testi-name">Charles Richard</h3>
+
+                      <p class="testi-title">CEO Angela</p>
+                    </div>
+                  </div>
+
+                  <blockquote class="testi-text">
+                    "I would be lost without restaurant. I would like to
+                    personally thank you for your outstanding product."
+                  </blockquote>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!--#FOOTER-->
+
+    <footer class="footer">
+      <nav class="grid-nav">
+        <a href="#" class="link-hover">About us</a>
+        <a href="#" class="link-hover">Contact</a>
+        <a href="#" class="link-hover">Jobs</a>
+        <a href="#" class="link-hover">Press kit</a>
+      </nav>
+
+      <nav class="social-nav">
+        <div class="social-icons">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path>
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path>
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <aside>
+        <p>
+          Copyright © <span id="year"></span> - All right reserved by Olivia
+          Cooks Ltd
+        </p>
+      </aside>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="Back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up"></ion-icon>
+    </a>
+
+    <script src="./assets/js/script.js" defer></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
